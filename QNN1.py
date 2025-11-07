@@ -72,7 +72,7 @@ algorithm_globals.random_seed = SEED
 
 
 # Učitavanje svih kombinacija iz CSV fajla
-df = pd.read_csv("/Users/milan/Desktop/GHQ/data/loto7_4506_k87.csv", header=None)
+df = pd.read_csv("/data/loto7_4506_k87.csv", header=None)
 
 # ==========================
 # 2. Koristimo N kombinacija
@@ -240,7 +240,7 @@ print("R² train po broju:", np.round(r2_scores_train, 4))
 print("R² test  po broju:", np.round(r2_scores_test, 4))
 """
 R² train po broju: [  -2.3891   -1.7549   -5.1671  -10.6939  -39.7657  -65.5059 -776.1818]
-R² test  po broju: [  -1.5038   -2.7852   -4.024    -3.8017   -7.0998  -50.9696 -817.0991]
+R² test  po broju: [ -1.6974  -3.9422  -6.4919 -10.7985 -20.4284 -37.9215 -98.3278]
 """
 
 
@@ -249,53 +249,7 @@ print("\n=== Predviđena sledeća loto kombinacija 7/39 ===")
 print(" ".join(str(num) for num in predicted_combination))
 print()
 """
-10
-=== Predviđena sledeća loto kombinacija 7/39 ===
-1 2 6 7 11 24 34
-
-100
-=== Predviđena sledeća loto kombinacija 7/39 ===
-1 2 2 6 8 11 15
-
 1000
 === Predviđena sledeća loto kombinacija 7/39 ===
-1 2 4 5 7 11 15
-"""
-
-
-
-
-
-"""
-
-Collaboration Proposal – Lotto Prediction & Jackpot Strategy
-
-Dear Sir/Madam,
-
-I came across your GitHub page today and reviewed your work with great interest.
-
-I myself occasionally play the Dutch Lotto and have often won prizes—though typically the best I’ve achieved is 4 out of 6 correct numbers.
-
-Recently, the Dutch Lotto introduced a new jackpot mechanism involving yellow and black balls, and I believe this creates a unique strategic opportunity.
-
-Here’s how it works:
-
-The main draw still consists of 6 numbers drawn from 1 to 45.
-After the main draw, an additional ball is drawn from a separate “Jackpot Machine” containing yellow and black balls.
-Yellow ball: The jackpot is awarded if someone matches all 6 numbers.
-Black ball: The jackpot rolls over and increases by €100,000.
-Crucially, each black ball is removed permanently after being drawn, so the chance of drawing a yellow ball increases over time.
-As of now, 7 black balls have already been drawn, meaning the probability of a yellow ball (and thus a guaranteed jackpot payout) in the upcoming draw is very high.
-
-Under the new rules, if no one matches all 6 numbers, the jackpot is awarded to the player(s) with 5 correct numbers—or, if no one has 5, then to those with 4 correct numbers.
-
-This significantly raises the value of achieving 5/6—it could be the difference between winning nothing and winning the entire jackpot.
-
-I have an idea to systematically improve the odds of hitting 5/6, and I would be honored to collaborate with you on this. I believe your expertise in data-driven prediction models combined with my insights could lead to a powerful strategy.
-
-If we succeed and win, I propose we split any prize 50/50.
-
-I would greatly appreciate your response and hope you’re open to exploring this opportunity together.
-
-Kind regards,
+1 2 x x x 11 15
 """
