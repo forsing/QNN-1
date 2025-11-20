@@ -206,8 +206,8 @@ for i in range(7):
 
     regressor = NeuralNetworkRegressor(
         neural_network=qnn,
-        optimizer=optimizer,
-        # optimizer = SPSA(maxiter=300),
+        # optimizer=optimizer,
+        optimizer = SPSA(maxiter=300),
         loss='squared_error'
     )
 
