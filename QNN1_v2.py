@@ -64,7 +64,7 @@ algorithm_globals.random_seed = SEED
 
 
 # Učitavanje svih kombinacija iz CSV fajla
-df = pd.read_csv("/Users/4c/Desktop/GHQ/data/loto7_4586_k24.csv", header=None)
+df = pd.read_csv("/data/loto7_4586_k24.csv", header=None)
 
 # ==========================
 # 2. Koristimo N kombinacija
